@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+    <title> Nutrition Calculator!</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret Messaging App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/8.7.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.7.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js"></script>    
+  </head>
+
+  <body>
+    <div>
+        <div>
+          <input id="inputName" placeholder="Name"/>
+          <input id="inputImg" placeholder="Link to image"/>
+          <input id="inputDescription" placeholder="Description"/>
+        </div>
+        <div>
+          <input id="inputProteins" placeholder="Protein"/>
+          <input id="inputCarbs" placeholder="Carbs"/>
+          <input id="inputFat" placeholder="Fat"/>
+        </div>
+      <button id="addButton">Add to Inventory</button>
+    </div>
+    
+    <div>
+      <h1>Inventory</h1>
+      <select id="dropdown">
+        <option value="id1">option1</option>
+        <option value="id2">option2</option>
+        <option value="id3">option3</option>
+        <option value="id4">option3</option>
+      </select>
+      <button id="addButton2">Add to Meal</button>
+      <div id="foodDisplay"></div>
+    </div>
+
+    <div>
+        <h1>Your Meal (WIP)</h1>
+        <div id="total">
+            <p>Total Protein: 0g</p>
+            <p>Total Carbs: 0g</p>
+            <p>Total Fat: 0g</p>
+        </div>
+        <div id="mealDisplay"></div>
+    </div>
+    <script src="js/script.js" defer></script> 
+  </body>
+
+</html>
